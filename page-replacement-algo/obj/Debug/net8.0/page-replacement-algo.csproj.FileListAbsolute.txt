@@ -1,0 +1,14 @@
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\bin\Debug\net8.0\page-replacement-algo.exe
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\bin\Debug\net8.0\page-replacement-algo.deps.json
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\bin\Debug\net8.0\page-replacement-algo.runtimeconfig.json
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\bin\Debug\net8.0\page-replacement-algo.dll
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\bin\Debug\net8.0\page-replacement-algo.pdb
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.AssemblyInfoInputs.cache
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.AssemblyInfo.cs
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.csproj.CoreCompileInputs.cache
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.dll
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\refint\page-replacement-algo.dll
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.pdb
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\page-replacement-algo.genruntimeconfig.cache
+C:\Users\12\source\repos\page-replacement-algo\page-replacement-algo\obj\Debug\net8.0\ref\page-replacement-algo.dll
