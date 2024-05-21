@@ -12,18 +12,19 @@ namespace page_replacement_algo
             bool quit = false;
             int input;
 
-            Console.WriteLine("1 - Display Appeals\n" +
-                              "2 - Display PageBlocks\n" +
-                              "3 - Add Page Block\n" +
-                              "4 - Remove Page Block\n" +
-                              "5 - Switch Flag\n" +
-                              "6 - FIFO Interruptions\n" +
-                              "7 - LRU Interruptions\n" +
-                              "0 - Quit\n" +
-                              "Flag status - " + flag);
-
             while(!quit)
             {
+                Console.WriteLine("1 - Показать обращения\n" +
+                                  "2 - Показать страничные блоки\n" +
+                                  "3 - Добавить страничный блок\n" +
+                                  "4 - Удалить страничный блок\n" +
+                                  "5 - Изменить режим отображения логов\n" +
+                                  "6 - Прерывания при алгоритме FIFO\n" +
+                                  "7 - Прерывания при алгоритме LRU\n" +
+                                  "0 - Выход\n" +
+                                  "Отображение логов - " + flag + '\n');
+
+                Console.Write("Выберите пункт меню: ");
                 try
                 {
                     input = Convert.ToInt32(Console.ReadLine());
@@ -33,56 +34,56 @@ namespace page_replacement_algo
                     Console.WriteLine(ex.Message);
                     continue;
                 }
-
-                switch(input)
+                Console.WriteLine();
+                switch (input)
                 {
                     case 1:
-                        Console.WriteLine("Appeals");
+                        Console.WriteLine("Обращения");
                         foreach(int i in appeals)
                         {
                             Console.Write(i + " ");
                         }
-                        Console.WriteLine();
+                        Console.WriteLine('\n');
                         break;
 
                     case 2:
-                        Console.WriteLine("PageBlocks");
+                        Console.WriteLine("Страничные блоки");
                         foreach(int i in pageBlocks)
                         {
                             Console.Write(i + " ");
                         }
-                        Console.WriteLine();
+                        Console.WriteLine('\n');
                         break;
 
                     case 3:
                         pageBlocks.Insert(0, -1);
-                        Console.WriteLine("Page Block Added");
+                        Console.WriteLine("Страничный блок добавлен\n");
                         break;
 
                     case 4:
                         if (pageBlocks.Count > 0)
                         {
                             pageBlocks.RemoveAt(0);
-                            Console.WriteLine("Page Block Removed");
+                            Console.WriteLine("Страничный блок удален\n");
                         }
                         else
                         {
-                            Console.WriteLine("PageBlocks is already clear");
+                            Console.WriteLine("Страничные блоки отсутствуют\n");
                         }
                         break;
 
                     case 5:
                         if (flag) flag = false;
                         else flag = true;
-                        Console.WriteLine("Flag Status: " + flag);
+                        Console.WriteLine("Отображение логов: " + flag + '\n');
                         break;
 
                     case 6:
-                        Console.WriteLine("FIFO Interruptions: " + FIFO.CountInterruptions(appeals, pageBlocks, flag));
+                        Console.WriteLine("Количество прерываний: " + FIFO.CountInterruptions(appeals, pageBlocks, flag) + '\n');
                         break;
 
                     case 7:
-                        Console.WriteLine("LRU Interruptions: " + LRU.CountInterruptions(appeals, pageBlocks, flag));
+                        Console.WriteLine("Количество прерываний: " + LRU.CountInterruptions(appeals, pageBlocks, flag) + '\n');
                         break;
 
                     case 0:
@@ -90,7 +91,7 @@ namespace page_replacement_algo
                         break;
                 }
             }
-            Console.WriteLine("Bye");
+            Console.WriteLine("Пока");
         }
     }
 }
